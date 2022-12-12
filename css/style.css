@@ -1,0 +1,132 @@
+body {
+    font-family: "Roboto Light", "Sans Serif Collection", Calibri;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: burlywood;
+}
+
+header {
+    border-radius: 5px;
+    background-color: grey;
+}
+
+header .logo > img {
+    /*display: flex;
+    float: left;*/
+    height: 160px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.slogan {
+    color: white;
+    padding: 10px;
+}
+
+
+header a {
+    text-decoration: none;
+    color: var(--main-primary-color);
+}
+
+/*meniu stilius*/
+
+header nav ul {
+    margin: 0;
+}
+
+header nav li {
+    border-right: 2px solid var(--main-secondary-text-color);
+    padding: 5px;
+    height: 50px;
+    background-color: var(--main-secondary-color);
+    color: var(--main-secondary-text-color);
+    transition: all 700ms;
+}
+
+header nav {
+    background-color: var(--main-secondary-color);
+    border-radius: 5px;
+}
+
+header nav li > a {
+    color: inherit;
+
+}
+
+header nav li:hover {
+    background-color: var(--main-secondary-text-color);
+    color: var(--main-primary-text-color);
+    transform: scale(1.1);
+}
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+body aside {
+    background-color: burlywood;
+}
+
+main {
+    background-color: burlywood;
+    color: white;
+}
+
+
+.foto {
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px;
+    width: 330px;
+    height: 220px;
+
+}
+iframe{
+    width: 300px;
+    height: 100px;
+}
+td {
+    background-color: grey;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.reklama {
+    border: 1px solid var(--main-primary-color);
+    border-radius: 5px;
+    background-color: var(--main-secondary-color);
+    color: white;
+    min-height: 250px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--main-primary-color);
+    color: var(--main-secondary-text-color);
+    border-radius: 5px;
+    height: 60px;
+}
+footer .logo > img {
+    height: 60px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+footer nav {
+    width: 800px;
+}
+footer nav li{
+    width: 100px;
+    height: 60px;
+
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+

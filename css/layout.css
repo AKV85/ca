@@ -1,0 +1,132 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wraper {
+    height: 100%;
+    width: 1200px;
+    display: grid;
+    grid-template-areas:
+        'h h h h'
+        't t a a'
+        'f f f f';
+    grid-gap: 1px;
+
+
+}
+
+body > .reklama {
+    float: left;
+    height: 100px;
+    width: 200px;
+}
+
+.wraper > header {
+    grid-area: h;
+}
+
+.wraper > aside {
+    grid-area: a;
+
+}
+
+body aside {
+    display: grid;
+    align-content: center;
+}
+
+.wraper > main {
+    grid-area: t;
+}
+
+.wraper > footer {
+    grid-area: f;
+}
+
+.reklama {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: grid;
+    grid-template-areas:
+        'l s s'
+        'l n n';
+}
+
+header .logo {
+    grid-area: l;
+}
+
+header .slogan {
+    justify-content: left;
+    align-items: center;
+    grid-area: s
+
+}
+
+header nav {
+    grid-area: n;
+}
+
+header nav li {
+    float: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        'pic video . .'
+        'tb tb . .';
+}
+
+main img {
+    grid-area: pic;
+
+}
+
+main iframe {
+    grid-area: video;
+}
+
+main table {
+    grid-area: tb;
+}
+
+footer {
+    display: flex;
+
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav li {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
