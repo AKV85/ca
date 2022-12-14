@@ -12,23 +12,26 @@
   ir c->d, kai a maziau uz b ir c maziau uz d.
   Sudarykite salygu seka, kuri nustatytu, ar egzistuoja
   siu intervalu sankirta ir, jeigu sankirta egzistuoja,
-  tai raskite jos rezius x->y
+  tai raskite jos rezius x->y <br>
+  Atsakymas:
 </p>
 <script>
-  let a = -5;
-  let b = 0;
-  let c = -10;
-  let d = -5;
+  let a = 1;
+  let b = 9;
+  let c = 2;
+  let d = 8;
   if (b < c || a > d || a > b || c > d){
-    window.alert('Nera sankirtos');}
+    document.write('nera sankirtos arba neatitinka salyga');}
+  else if (a <= c && b <= d ){
+    document.write('x = ' + c +'; y = ' + b);}
+  else if (c <= a && d <= b){
+    document.write('x = ' + a +'; y = ' + d);}
+  else if (c <= a && b <= d ){
+    document.write('x = ' + a +'; y = ' + b);}
+  else if (a <= c && d <= b ){
+    document.write('x = ' + c +'; y = ' + d);}
 
-  if (c <= a && a <=d){
-    x = c}
-  else{ x = a}
-  if (d <= b && a <=d){
-    y = d}
-  else{ y = b}
-  document.write('x = ' + x +'; y = ' + y);
+
 </script>
 </body>
 </html>
