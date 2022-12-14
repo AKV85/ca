@@ -17,12 +17,17 @@
 <script>
   let a = -5;
   let b = 0;
-  let c = -4;
-  let d = 4;
-  if (a > c) { x = c;}
-  else { x = a;}
-  if (b < d) { y = b;}
-  else { y = d;}
+  let c = -10;
+  let d = -5;
+  if (b < c || a > d || a > b || c > d){
+    window.alert('Nera sankirtos');}
+
+  if (c <= a && a <=d){
+    x = c}
+  else{ x = a}
+  if (d <= b && a <=d){
+    y = d}
+  else{ y = b}
   document.write('x = ' + x +'; y = ' + y);
 </script>
 </body>
