@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>JS darbas su masyvais</h2>
+<h4>4 Uzduotis. </h4>
+
+4] Suskaičiuoti kiek yra ‘object’ tipo kintamųjų<br>
+Atsakymas:
+
+<p id="paragraph"></p>
+
+<script>
+    let objectCount=0;
+    let a=['A','B','1',1,2,'Vardas','',[],null];
+    for(let i=0; i<a.length;i++){
+        if(typeof a[i]==='object'){
+            objectCount=objectCount+1;
+        }
+    }
+    document.getElementById('paragraph').innerHTML='Objektų kiekis duotame masyve: '+objectCount;
+</script>
+</body>
+</html>
