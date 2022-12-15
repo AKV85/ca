@@ -6,16 +6,19 @@
 </head>
 <body>
 <h2>JS darbas su masyvais</h2>
-<h4>1 Uzduotis. </h4>
-<p> 1] Duotas Masyvas A spausdinti kas antrą masyvo elementą
+<h4>3 Uzduotis. </h4>
+3] Iš duoto masyvo išrinkti visus skaičius į naują masyvą B
 
-    let a = ['A', 'B', '1', 1, 2, 'Vardas', '', [], null];
-</p>
+<br>
+Atsakymas:
 <script>
     let a = ['A', 'B', '1', 1, 2, 'Vardas', '', [], null];
-    for (let i = 1; i < a.length; i += 2) {
-        document.write(a[i]);
-    }
+
+    let B = a.filter(function(item){
+        return typeof item === 'number';
+    });
+
+    document.write(B);
 </script>
 </body>
 </html>
