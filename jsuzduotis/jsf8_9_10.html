@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>8 uzduotis</h3>
+<p>Atsakymas:</p>
+<div id="ats"></div>
+<script>
+    let studentas = ['Andrej',
+        'Kotov', 1, 'CodeAcademy', [8, 6, 9]];
+    for (let i = 0; i < studentas[4].length; i++) {
+        ats.innerHTML += studentas[4][i] + ' ';
+    }
+</script>
+<h3>9 uzduotis</h3>
+<p>Atsakymas:</p>
+<div id="ats2"></div>
+<script>
+    let bal = [10, 5, 6, 10, 8];
+    for (let i = 0; i < bal.length; i++) {
+        let balplus = bal[i];
+        if (balplus < 10) {
+            balplus++
+        }
+        ats2.innerHTML += 'Buvo: ' + bal[i] + '. Tapo: ' + balplus + ' ';
+    }
+
+</script>
+<h3>10 uzduotis</h3>
+<p>Atsakymas:</p>
+<div id="ats3"></div>
+<script>
+    let balas = [10, 5, 6, 10, 8];
+    a = balas[0];
+    b = balas[4];
+    c = balas [3];
+
+
+    if (a>0 && b>0 &&c>0) {
+        ats3.innerHTML += (a + b + c) / 3;
+    }
+</script>
+
+</body>
+</html>
