@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h3>17 uzduotis</h3>
+
+<p>1.Sukurti funkcija/metoda kuris sudetu lyginius arba nelyginius pateikto masyvo elementus.<br>
+
+    let A = [1,3,6,5,7,2,2,4,4,8];<br>
+    sudeti(A, ‘even’); // even|odd<br>
+    Atsakymas<br>
+</p>
+<div id="ats"></div>
+<script>
+
+    //17 uzd
+    let A = [1, 3, 6, 5, 7, 2, 2, 4, 4, 8];
+    let sumaMasyvoSkaiciu = 0;
+
+    function sudetis(masyvas, tipas) {
+        sumaMasyvoSkaiciu = 0;
+        for (let i = 0; i < A.length; i++) {
+            if (tipas === 'even') {
+                if (A[i] % 2 === 0) {
+                    sumaMasyvoSkaiciu += A[i];
+                }
+            } else if (tipas === 'odd') {
+                if (A[i] % 2 !== 0) {
+                    sumaMasyvoSkaiciu += A[i];
+                }
+            } else {
+                ats.innerHTML += 'Neteisingas funkcijos sudetis() parametras';
+            }
+        }
+        return sumaMasyvoSkaiciu;
+    }
+
+
+    ats.innerHTML += 'Lyginiu A masyvo skaiciu suma: ' + sudetis(A, 'even') + '<br>';
+    ats.innerHTML += 'Nelyginiu A masyvo skaiciu suma: ' + sudetis(A, 'odd') + ' <br>';
+    ats.innerHTML += '2. Sukurti funkcija/metoda kuris sudetu lyginiu arba nelyginių indeksų reikšmes.<br>(pvz ats: [0 => 1, 1=> 3,  2=> 6, 3 => 5, 4 => 7, 5=>2, 6 =>2, 7=> 4, 8=>4, 9=>8]; 1+6+7+2+4 = 20(Kai lyginiai indexai)<br>';
+
+    function sudetisIndex(masyvas, tipas) {
+        sumaMasyvoSkaiciu = 0;
+        for (let i = 0; i < A.length; i++) {
+            if (tipas === 'even') {
+                if (i % 2 === 0) {
+                    sumaMasyvoSkaiciu += A[i];
+                }
+            } else if (tipas === 'odd') {
+                if (i % 2 !== 0) {
+                    sumaMasyvoSkaiciu += A[i];
+                }
+            } else {
+                ats.innerHTML += 'Neteisingas funkcijos sudetisIndex() parametras' + '<br>';
+            }
+        }
+        return sumaMasyvoSkaiciu;
+    }
+
+    ats.innerHTML += 'Atsakymas: <br>'
+    ats.innerHTML += 'Lyginio indekso A masyvo elementu reiksmu suma: ' + sudetisIndex(A, 'even') + '<br>';
+    ats.innerHTML += 'Nelyginio indekso A masyvo elementu reiksmiu suma: ' + sudetisIndex(A, 'odd') + '<br>';
+    ats.innerHTML += '3. Sukurt atsitiktinių skaicių i masyvą generatorių, kuriam nurodytume kiek masyvo elementu bus sukuriama.<br>'
+
+    function generator(skaicius) {
+        for (let i = 0; i < skaicius; i++) {
+            A.push(Math.floor(Math.random() * 10));
+
+        }
+    }
+
+    ats.innerHTML += 'Atsakymas: <br>'
+    generator(4); //idedame 4 raide i A masyva
+    ats.innerHTML += 'A masyvas [' + A + '] <br>'
+    ats.innerHTML += ' 4.Sukurti atsitiktinių raidžių į masyvą generatorių.<br>'
+    const alphabet = "abcdefghijklmnopqrstuvwxyz"
+    function generatorRaides(skaicius) {
+        for (let i = 0; i < skaicius; i++) {
+            A.push(alphabet[Math.floor(Math.random() * alphabet.length)]);
+
+        }
+    }
+    ats.innerHTML += 'Atsakymas: <br>'
+    generatorRaides(4); //idedame 4 raides i A masyva
+    ats.innerHTML += 'A masyvas [' + A + '] <br>'
+
+</script>
+
+
+</body>
+
+</html>
