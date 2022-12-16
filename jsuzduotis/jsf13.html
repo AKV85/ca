@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<h3>13 uzduotis</h3>
+
+<p>13. Patikrinkite ar studentas mokosi ketvirtame kurse ir ar ši reikšmė yra kaip numeral (===).
+  <br>
+  Atsakymas:</p>
+<div id="ats"></div>
+<script>
+
+  let studentas = {
+    'name': 'Andrej ',
+    'Surn': 'Kotov ',
+    'kurs': 1,
+    'place': 'CodeAcademy ',
+    'bal': [4, 5, 6]
+  };
+
+  let studentas1 = {
+    'name': 'Vasia ',
+    'Surn': 'Vasiauskas ',
+    'kurs': 4,
+    'place': 'CodeAcademy ',
+    'bal': [10, 8, 9]
+  };
+
+  if (studentas.kurs==='4' ){
+    ats.innerHTML +='Taip.' + studentas.name + ' yra 4 kurse.<br>';}
+  else{
+    ats.innerHTML +='Ne.'+ studentas.name + 'yra ne 4 kurse.<br>';}
+  if (studentas1.kurs==='4'){
+    ats.innerHTML +='Taip.' + studentas1.name + ' yra 4 kurse.<br>';}
+  else{
+    ats.innerHTML +='Ne.'+ studentas1.name + 'yra ne 4 kurse.<br>';}
+  if (typeof studentas.kurs==="number"){
+    ats.innerHTML +='Taip.Pirmo studento Parametras kursas yra numeral tipo.<br>';}
+  else{
+    ats.innerHTML +='Ne.Pirmo studento Parametras kursas yra ne numeral tipo.<br>';}
+  if (typeof studentas1.kurs==="number"){
+    ats.innerHTML +='Taip.Antro studento Parametras kursas yra numeral tipo.<br>';}
+  else{
+    ats.innerHTML +='Ne.Antro studento Parametras kursas yra ne numeral tipo.<br>';}
+
+
+
+</script>
+
+</body>
+
+</html>
