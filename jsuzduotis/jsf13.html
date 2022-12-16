@@ -31,14 +31,21 @@
   };
 
   if (studentas.kurs=='4' ){
-    ats.innerHTML +='Studentas '+ studentas.name +' '+  studentas.Surn + ' yra abiturientas.<br>';}
+    ats.innerHTML +='Taip.' + studentas.name + ' yra 4 kurse.<br>';}
   else{
-    ats.innerHTML +='Studentui '+ studentas.name +' '+  studentas.Surn + ' dar toli iki mokslu baigimo.<br>';}
+    ats.innerHTML +='Ne.'+ studentas.name + 'yra ne 4 kurse.<br>';}
   if (studentas1.kurs=='4'){
-    ats.innerHTML +='Studentas '+ studentas1.name +' '+  studentas1.Surn + ' yra abiturientas.<br>';}
+    ats.innerHTML +='Taip.' + studentas1.name + ' yra 4 kurse.<br>';}
   else{
-    ats.innerHTML +='Studentui '+ studentas1.name +' '+  studentas1.Surn + ' dar toli iki mokslu baigimo.<br>';}
-
+    ats.innerHTML +='Ne.'+ studentas1.name + 'yra ne 4 kurse.<br>';}
+  if (typeof studentas.kurs==="number"){
+    ats.innerHTML +='Taip.Pirmo studento Parametras kursas yra numeral tipo.<br>';}
+  else{
+    ats.innerHTML +='Ne.Pirmo studento Parametras kursas yra ne numeral tipo.<br>';}
+  if (typeof studentas1.kurs==="number"){
+    ats.innerHTML +='Taip.Antro studento Parametras kursas yra numeral tipo.<br>';}
+  else{
+    ats.innerHTML +='Ne.Antro studento Parametras kursas yra ne numeral tipo.<br>';}
 
 
 
