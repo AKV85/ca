@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h3>15 uzduotis</h3>
+
+<p>15. Sukurkite funkciją vardu "suma", kuri priima du skaičius kaip argumentus ir grąžintų jų sumą.
+
+
+<h3>16 uzduotis</h3>
+
+<p>16. Naudodami šią funkciją, parašykite kodą, kuris atspausdina visų skaičių nuo 1 iki 100 sumą.
+    <br>
+    Atsakymas:</p>
+<div id="ats"></div>
+<script>
+    function suma(a, b) {
+        return a + b;
+    }
+    let sumaS = 0;
+    for (let i = 0; i < 100; i++) {
+        sumaS = suma(sumaS, i + 1);
+    }
+    ats.innerHTML += 'Visų skaičių nuo 1 iki 100 sumą = '+ sumaS
+    </script>
+
+
+</body>
+
+</html>
