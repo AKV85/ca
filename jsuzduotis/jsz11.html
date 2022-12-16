@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h3>11 uzduotis</h3>
+
+<p>11. Suskaičiuokite ir išveskite dviejų pasirinktų pažymių sandaugą.<br>
+    Atsakymas:</p>
+<div id="ats"></div>
+<script>
+
+    let studentas = {
+        'name': 'Andrej ',
+        'Surn': 'Kotov ',
+        'kurs': 1,
+        'place': 'CodeAcademy ',
+        'bal': [4, 5, 6]
+    };
+
+
+    ats.innerHTML += 'Mano pazymiai yra:'
+    for (let i = 0; i < studentas.bal.length; i++) {
+        ats.innerHTML += studentas.bal[i] + ' ';
+
+    }
+    ats.innerHTML += '<br>'
+    result = studentas.bal[0] * studentas.bal[1];
+    ats.innerHTML += 'Pirmo ir antro pazymiu sandauga: ' + result + '<br>';
+    ats.innerHTML += '12. Patikrinkite ar kursas yra numeral tipo.'
+    + "<br>" ;
+    ats.innerHTML += "Parametro 'kurs' tipas yra " + typeof studentas.kurs + "<br>" ;
+</script>
+
+</body>
+
+</html>
