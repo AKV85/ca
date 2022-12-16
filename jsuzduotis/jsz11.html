@@ -31,7 +31,12 @@
     ats.innerHTML += 'Pirmo ir antro pazymiu sandauga: ' + result + '<br>';
     ats.innerHTML += '12. Patikrinkite ar kursas yra numeral tipo.'
     + "<br>" ;
-    ats.innerHTML += "Parametro 'kurs' tipas yra " + typeof studentas.kurs + "<br>" ;
+    if (typeof studentas.kurs==="number"){
+        ats.innerHTML +='Taip. Parametras kursas yra numeral tipo.';}
+    else{
+        ats.innerHTML +='Ne. Parametras kursas yra ne numeral tipo.';}
+
+
 </script>
 
 </body>
