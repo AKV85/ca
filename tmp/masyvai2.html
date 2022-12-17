@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>masyvai2</h1>
+<p>Mano pirmas paragrafas.</p>
+<script>
+    let masyvas = [12, 15, 19];
+    let i = 0;
+    let ats = ''
+    while (masyvas.length > i) {
+        ats += i + '-asis' + masyvas[i] + '<br>';
+        i++;
+    }
+    ats += 'Masyvo ilgis = ' + masyvas.length
+    document.querySelector('body > p').innerHTML = ats;
+</script>
+</body>
+</html>
