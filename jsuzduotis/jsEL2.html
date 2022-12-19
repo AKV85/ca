@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pasirinkimo laukų ir mygtuko pavyzdys</title>
+</head>
+<body>
+<h1>Dropdown and Form Example</h1>
+
+<!-- Dropdown menus -->
+<label for="color-select">Select a color:</label>
+<select id="color-select">
+    <option value="red">Red</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>
+</select>
+<br>
+<br>
+<label for="animal-select">Select an animal:</label>
+<select id="animal-select">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="bird">Bird</option>
+    <option value="reptile">Reptile</option>
+    <option value="other">Other</option>
+</select>
+<br>
+<br>
+
+<!-- Button to show form -->
+<button id="show-form-button">Show Form</button>
+
+<!-- Form to be shown when button is clicked -->
+<form id="my-form" style="display:none;">
+    <h2>Please fill out the form:</h2>
+    <label for="name-input">Name:</label><br>
+    <input type="text" id="name-input" name="name"><br>
+    <br>
+    <label for="email-input">Email:</label><br>
+    <input type="email" id="email-input" name="email"><br>
+    <br>
+    <label for="message-textarea">Message:</label><br>
+    <textarea id="message-textarea" name="message"></textarea><br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+    <script src="../js/jsEL2.js"></script>
+</body>
+</html>
